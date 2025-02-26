@@ -1,0 +1,104 @@
+% Project:  TeX PhD Motivation Letter Template
+% Author:   Deep Ghuge
+
+% EDIT main.tex directly
+% -------------------------------
+% Modified by zanoptics (zanzhao2021@outlook.com) to fit the need of SZTU students
+
+
+\documentclass[11pt]{report}
+\usepackage[margin=0.59in]{geometry}
+\usepackage{ragged2e} %两端对齐包
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{lipsum}
+\usetikzlibrary{calc}
+\usepackage{hyperref}
+\hypersetup{ %隐藏超链接红框和各种奇怪颜色, 目录和引用会好看很多
+hidelinks,
+}
+
+\definecolor{goodcream}{RGB}{0, 53, 146} % corrected the RGB values to represent royal purple more accurately
+\newcommand{\mediumsize}{\fontsize{15pt}{16pt}\selectfont}
+
+\begin{document}
+\begin{titlepage}
+
+    \begin{tikzpicture}[remember picture,overlay]
+        \draw[line width=10 pt, color=goodcream]
+            ($(current page.north west) + (0.30in,-0.30in)$) rectangle
+            ($(current page.south east) + (-0.30in,0.30in)$);
+    \end{tikzpicture}
+
+\vspace{-0.4em}
+\begin{minipage}[t]{0.62\textwidth}
+    {\vspace{-0.05in}\hspace{-0.05in}\includegraphics[width=\textwidth]{image/SZTU_header.pdf}}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.32\textwidth}
+    \raggedleft
+    \textbf{ Your Name} \\
+    Shenzhen Technology University \\
+    518118 Shenzhen, China \\
+    \href{mailto:myname@email.com}{myname@email.com} \\
+    +86 123 4567 8901 \\
+    \href{https://www.linkedin.com/}{Linkedin}
+\end{minipage}
+
+\vspace{1em}
+
+
+\raggedright
+\today\\
+\vspace{0.5em}
+\textbf{Ideal University} \\
+Optics street 20, \\
+12345 City, Country \\
++49 111 222 333 \\
+\href{mailto:idealschool@uni.edu}{idealschool@uni.edu} \\
+
+\vspace{0.8em}
+
+\raggedright Dear Application Committee,\\
+
+\vspace{0.7em}
+\justifying %两端对齐
+\setlength {\parindent} {0pt} %首行不缩进
+
+\lipsum[1]
+
+\vspace{0.7em}
+
+
+\lipsum[1]
+
+\vspace{0.7em}
+
+
+\lipsum[1]
+
+\vspace{0.7em}
+
+
+\lipsum[1]
+
+\vspace{0.7em}
+
+
+
+\begin{minipage}[t]{0.17\textwidth}
+    \raggedright Kind regards,\\
+    \textbf{Your Name}
+\end{minipage}
+\hfill
+% 可添加文献引用
+\begin{minipage}[t]{0.8\textwidth}
+
+    % \tiny{[1] Trocha, P. Kerr-Nonlinear Microresonators and Frequency Combs: Modelling, Design, and Applications. (Karlsruher Institut für Technologie (KIT), 2022). doi:10.5445/IR/1000142186.}\\
+    % \tiny{[2] Triggiani, D. \& Tamma, V. Estimation with Ultimate Quantum Precision of the Transverse Displacement between Two Photons via Two-Photon Interference Sampling Measurements. Phys. Rev. Lett. 132, 180802 (2024).}
+\end{minipage}
+
+
+
+\end{titlepage}
+\end{document}
