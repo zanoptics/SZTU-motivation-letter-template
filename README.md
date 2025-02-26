@@ -23,7 +23,7 @@
 
 ## :three: 示例
 
-![example-image](image/example.png)
+<img src="image/example.png" alt="example-image" style="zoom:67%;" />
 
 ## :four: 许可证
 
